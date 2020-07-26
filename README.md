@@ -4,7 +4,9 @@ Attached is a simple REST web service created as part of the 'Master Java Web Se
 
 This project contains a number of packages that address a wide range of areas involved in the development of a REST Web Service API. The key areas addressed by this project include:
 
-- hello_world package: Explored and implemented common REST endpoint annotations i.e GetMapping, PostMapping etc. Most importantly, the concept of internationalisation was explored through the endpoint @GetMapping(path="/hello-world-internalisation"). Depending on the 'Accept-language' passed as a header in Get Request, endpoint retrieved different reponses i.e. Bonjour returned for 'fr'. 
+- users package:  Explored and implemented common REST endpoint annotations i.e GetMapping, PostMapping etc. More importantly,  these endpoints featured implementation of Java Persistance Api and in memory H2 database to retreive, delete users and posts etc. Thus, functionalilty relating to  Entities, Repositories, OneToMany and ManytoMany mappings was covered. 
+
+- hello_world package: The concept of internationalisation was explored through the endpoint @GetMapping(path="/hello-world-internalisation"). Depending on the 'Accept-language' passed as a header in Get Request, endpoint retrieved different reponses i.e. Bonjour returned for 'fr'. 
 
 - exception package: REST Exception Controller created to handle and return specifc details when certain exceptions are thrown in application utilising various HTTP Statuses. For example, trying to retrieve a user with an invalid id, resulted in the throwing of a UserNotFoundException and the endpoint ultimately returned a Http Status of 'Not Found' with other details such as a timestamp and exception specific details. 
 
